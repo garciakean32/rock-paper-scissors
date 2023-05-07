@@ -12,15 +12,24 @@
 <body>
     <div class="container">
         <h1>Bato Bato Pick</h1>
-        <div class="images">
-            <img src="image/hand-o-rock.png" alt="rock" width="200" height="300">
-            <img src="image/paper.png" alt="paper" width="200" height="300">
-            <img src="image/scissors.png" alt="scissors" width="200" height="300">
+        <div class="score-container">
+            <div>
+                <b>Your Score: </b><b id="yourScore">0</b>
+            </div>
+            <div>
+                <b>Draw: </b><b id="drawScore">0</b>
+            </div>
+            <div>
+                <b>AI Score: </b> <b id="aiScore">0</b>
+            </div>
         </div>
-        <div class="btn">
-            <button class="rock-btn" onclick="clickRock()">Rock</button>
-            <button class="paper-btn" onclick="clickPaper()">Paper</button>
-            <button class="scissor-btn" onclick="clickScissors()">Scissors</button>
+        <div class="images">
+            <img src="image/rock-paper-scissors-icon-1.jpg" alt="rock" width="900" height="300">
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="rock-btn" onclick="clickRock()">Rock</button>
+            <button class="btn" id="paper-btn" onclick="clickPaper()">Paper</button>
+            <button class="btn" id="scissors-btn" onclick="clickScissors()">Scissors</button>
         </div>
     </div>
     </div>
